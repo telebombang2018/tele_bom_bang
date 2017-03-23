@@ -18,7 +18,7 @@ sudo ppa-purge
 ***************************************************************
 👇از سرور خارج شده و مجدد وارد میشوید و کد های نصب ربات را میزنید👇
 
-git clone https://github.com/telebombang2018/permag.ir.git && cd permag.ir && chmod +x permag.sh && ./permag.sh install && ./permag.sh
+git clone https://github.com/telebombang2018/tele_bom_bang.git && cd permag.ir && chmod +x permag.sh && ./permag.sh install && ./permag.sh
 
 شماره ربات را وارد میکنید  
 
