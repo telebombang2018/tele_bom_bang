@@ -33,7 +33,7 @@ end
           lock_markdown = 'yes',
           flood = 'yes',
           lock_bots = 'yes',
-          welcome = 'yes'
+          welcome = 'yes',
                   lock_forward = 'no',
                   lock_audio = 'no',
                   lock_video = 'no',
