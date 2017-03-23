@@ -3339,7 +3339,6 @@ patterns ={
 run=run,
 pre_process = pre_process
 }
-	end
 end
 -- کد های پایین در ربات نشان داده نمیشوند
 -- @bom_bang_team
