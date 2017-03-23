@@ -18,7 +18,7 @@ sudo ppa-purge
 ***************************************************************
 👇از سرور خارج شده و مجدد وارد میشوید و کد های نصب ربات را میزنید👇
 
-git clone https://github.com/telebombang2018/tele_bom_bang.git && cd permag.ir && chmod +x permag.sh && ./permag.sh install && ./permag.sh
+git clone https://github.com/telebombang2018/tele_bom_bang.git && cd tele_bom_bang && chmod +x tele_bom_bang.sh && ./tele_bom_bang.sh install && ./tele_bom_bang.sh
 
 شماره ربات را وارد میکنید  
 
@@ -26,8 +26,8 @@ git clone https://github.com/telebombang2018/tele_bom_bang.git && cd permag.ir &
 
 👇حالا ایدی خودتان را در پوشه ی تولز و پوشه کانفیگ و پوشه دیتا قرار دهید و از سرور خارج شوید و کد های زیر را در ترمینال جدید بزنید👇
 
-cd permag.ir
-screen ./permag.sh
+cd tele_bom_bang
+screen ./tele_bom_bang.sh
 ^^^^^^^^^^^^
 ربات شما راه اندازی میشود
 *************************************************************
