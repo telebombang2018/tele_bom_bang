@@ -22,7 +22,7 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = check_markdown('\n\n@bom_bang_team')
+  local tmp = check_markdown('\n\n🔱 @bombangteam 🔱')
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\n_All Plugins Reloaded_\n\n"..nact.." *Plugins Enabled*\n"..nsum.." *Plugins Installed*\n\n@bom_bang_team"
+  local text = text.."\n_All Plugins Reloaded_\n\n"..nact.." *Plugins Enabled*\n"..nsum.." *Plugins Installed*\n\n@bombangteam"
 return text
 end
 
@@ -215,7 +215,7 @@ return {
           "!plist : list all plugins.",
           "!pl + [plugin] : enable plugin.",
           "!pl - [plugin] : disable plugin.",
-          "* : reloads all plugins." },
+          " * : reloads all plugins." },
           },
   patterns = {
     "^[!/#]plist$",
@@ -223,7 +223,7 @@ return {
     "^[!/#](pl) (-) ([%w_%.%-]+)$",
     "^[!/#](pl) (+) ([%w_%.%-]+) (chat)",
     "^[!/#](pl) (-) ([%w_%.%-]+) (chat)",
-    "^!pl? (*)$",
+    "^!pl?(*)$",
     "^[!/#](reload)$"
     },
   run = run
