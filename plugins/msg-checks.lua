@@ -23,80 +23,80 @@ end
 	else
 		return
 	end
-	if settings.mute_all then
-		mute_all = settings.mute_all
+	if settings.lock_all then
+		lock_all = settings.lock_all
 	else
-		mute_all = 'no'
+		lock_all = 'no'
 	end
-	if settings.mute_gif then
-		mute_gif = settings.mute_gif
+	if settings.lock_gif then
+		lock_gif = settings.lock_gif
 	else
-		mute_gif = 'no'
+		lock_gif = 'no'
 	end
-   if settings.mute_photo then
-		mute_photo = settings.mute_photo
+   if settings.lock_photo then
+		lock_photo = settings.lock_photo
 	else
-		mute_photo = 'no'
+		lock_photo = 'no'
 	end
-	if settings.mute_sticker then
-		mute_sticker = settings.mute_sticker
+	if settings.lock_sticker then
+		lock_sticker = settings.lock_sticker
 	else
-		mute_sticker = 'no'
+		lock_sticker = 'no'
 	end
-	if settings.mute_contact then
-		mute_contact = settings.mute_contact
+	if settings.lock_contact then
+		lock_contact = settings.lock_contact
 	else
-		mute_contact = 'no'
+		lock_contact = 'no'
 	end
-	if settings.mute_inline then
-		mute_inline = settings.mute_inline
+	if settings.lock_inline then
+		lock_inline = settings.lock_inline
 	else
-		mute_inline = 'no'
+		lock_inline = 'no'
 	end
-	if settings.mute_game then
-		mute_game = settings.mute_game
+	if settings.lock_game then
+		lock_game = settings.lock_game
 	else
-		mute_game = 'no'
+		lock_game = 'no'
 	end
-	if settings.mute_text then
-		mute_text = settings.mute_text
+	if settings.lock_text then
+		lock_text = settings.lock_text
 	else
-		mute_text = 'no'
+		lock_text = 'no'
 	end
-	if settings.mute_forward then
-		mute_forward = settings.mute_forward
+	if settings.lock_forward then
+		lock_forward = settings.lock_forward
 	else
-		mute_forward = 'no'
+		lock_forward = 'no'
 	end
-	if settings.mute_location then
-		mute_location = settings.mute_location
+	if settings.lock_location then
+		lock_location = settings.lock_location
 	else
-		mute_location = 'no'
+		lock_location = 'no'
 	end
-   if settings.mute_document then
-		mute_document = settings.mute_document
+   if settings.lock_document then
+		lock_document = settings.lock_document
 	else
-		mute_document = 'no'
+		lock_document = 'no'
 	end
-	if settings.mute_voice then
-		mute_voice = settings.mute_voice
+	if settings.lock_voice then
+		lock_voice = settings.lock_voice
 	else
-		mute_voice = 'no'
+		lock_voice = 'no'
 	end
-	if settings.mute_audio then
-		mute_audio = settings.mute_audio
+	if settings.lock_audio then
+		lock_audio = settings.lock_audio
 	else
-		mute_audio = 'no'
+		lock_audio = 'no'
 	end
-	if settings.mute_video then
-		mute_video = settings.mute_video
+	if settings.lock_video then
+		lock_video = settings.lock_video
 	else
-		mute_video = 'no'
+		lock_video = 'no'
 	end
-	if settings.mute_tgservice then
-		mute_tgservice = settings.mute_tgservice
+	if settings.lock_tgservice then
+		lock_tgservice = settings.lock_tgservice
 	else
-		mute_tgservice = 'no'
+		lock_tgservice = 'no'
 	end
 	if data[tostring(chat)] and data[tostring(chat)]['settings'] then
 		settings = data[tostring(chat)]['settings']
@@ -149,7 +149,7 @@ end
 		lock_webpage = 'no'
 	end
   if msg.adduser or msg.joinuser or msg.deluser then
-  if mute_tgservice == "yes" then
+  if lock_tgservice == "yes" then
 del_msg(msg.chat_id_, tonumber(msg.id_))
   end
 end
@@ -200,84 +200,84 @@ if msg.edited and lock_edit == "yes" then
 kick_user(user, chat)
     end
   end
-if msg.forward_info_ and mute_forward == "yes" then
+if msg.forward_info_ and lock_forward == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
     end
   end
-if msg.photo_ and mute_photo == "yes" then
+if msg.photo_ and lock_photo == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.video_ and mute_video == "yes" then
+    if msg.video_ and lock_video == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.document_ and mute_document == "yes" then
+    if msg.document_ and lock_document == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.sticker_ and mute_sticker == "yes" then
+    if msg.sticker_ and lock_sticker == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.animation_ and mute_gif == "yes" then
+    if msg.animation_ and lock_gif == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.contact_ and mute_contact == "yes" then
+    if msg.contact_ and lock_contact == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.location_ and mute_location == "yes" then
+    if msg.location_ and lock_location == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.voice_ and mute_voice == "yes" then
+    if msg.voice_ and lock_voice == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if tonumber(msg.via_bot_user_id_) ~= 0 and mute_inline == "yes" then
+    if tonumber(msg.via_bot_user_id_) ~= 0 and lock_inline == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.game_ and mute_game == "yes" then
+    if msg.game_ and lock_game == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
 kick_user(user, chat)
    end
 end
-    if msg.audio_ and mute_audio == "yes" then
+    if msg.audio_ and lock_audio == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
@@ -327,7 +327,7 @@ kick_user(user, chat)
    end
 end
 if msg.text:match("(.*)")
-and mute_text == "yes" then
+and lock_text == "yes" then
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
@@ -335,7 +335,7 @@ kick_user(user, chat)
      end
    end
 end
-if mute_all == "yes" then 
+if lock_all == "yes" then 
  if is_channel then
  del_msg(msg.chat_id_, tonumber(msg.id_))
   elseif is_chat then
