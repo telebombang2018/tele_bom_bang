@@ -1012,7 +1012,7 @@ if lock_flood == "yes" then
 if not lang then
  return "🔐*Flooding* _Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال پیام مکرر در گروه قفل است🔐"
+ return "🔐ارسال پیام رگبار در گروه قفل است🔐"
 end
 else
  data[tostring(target)]["settings"]["flood"] = "yes"
@@ -1020,7 +1020,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Flooding* _Has Been Locked_🔐"
 else
- return "🔐ارسال پیام مکرر در گروه قفل شد🔐"
+ return "🔐ارسال پیام رگبار در گروه قفل شد🔐"
 end
 end
 end
@@ -1041,14 +1041,14 @@ local lock_flood = data[tostring(target)]["settings"]["flood"]
 if not lang then
 return "🔓*Flooding* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال پیام مکرر در گروه باز بود🔓"
+return "🔓ارسال پیام رگبار در گروه باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["flood"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Flooding* _Has Been Unlocked_🔓" 
 else
-return "🔓ارسال پیام مکرر در گروه باز شد🔓"
+return "🔓ارسال پیام رگبار در گروه باز شد🔓"
 end
 end
 end
@@ -1411,10 +1411,10 @@ local expiretime = redis:hget('expiretime', msg.chat_id_)
 
 if not lang then
 local settings = data[tostring(target)]["settings"] 
- text = "🔰*Group Settings*🔰\n\n🔐_Lock edit :_ *"..settings.lock_edit.."*\n🔐_Lock links :_ *"..settings.lock_link.."*\n🔐_Lock fosh :_ *"..settings.lock_fosh.."*\n🔐_Lock tags :_ *"..settings.lock_tag.."*\n🔐_Lock Persian* :_ *"..settings.lock_arabic.."*\n🔐_Lock flood :_ *"..settings.flood.."*\n🔐_Lock spam :_ *"..settings.lock_spam.."*\n🔐_Lock mention :_ *"..settings.lock_mention.."*\n🔐_Lock webpage :_ *"..settings.lock_webpage.."*\n🔐_Lock markdown :_ *"..settings.lock_markdown.."*\n🔐_Bots protection :_ *"..settings.lock_bots.."*\n🔐_Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n✋_welcome :_ *"..settings.welcome.."*\n\n 🔓Group lock List 🔓 \n\n🔐_lock all : _ *"..settings.lock_all.."*\n🔐_lock gif :_ *"..settings.lock_gif.."*\n🔐_lock text :_ *"..settings.lock_text.."*\n🔐_lock inline :_ *"..settings.lock_inline.."*\n🔐_lock game :_ *"..settings.lock_game.."*\n🔐_lock photo :_ *"..settings.lock_photo.."*\n🔐_lock video :_ *"..settings.lock_video.."*\n🔐_lock audio :_ *"..settings.lock_audio.."*\n🔐_lock voice :_ *"..settings.lock_voice.."*\n🔐_lock sticker :_ *"..settings.lock_sticker.."*\n🔐_lock contact :_ *"..settings.lock_contact.."*\n🔐_lock forward :_ *"..settings.lock_forward.."*\n🔐_lock location :_ *"..settings.lock_location.."*\n🔐_lock document :_ *"..settings.lock_document.."*\n🔐_lock TgService :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_expire time :_ *"..expire.."*\n*____________________*\n*Language* : *EN*"
+ text = "🔰*Group Settings*🔰\n\n⚡️_Lock edit :_ *"..settings.lock_edit.."*\n⚡️_Lock links :_ *"..settings.lock_link.."*\n⚡️_Lock fosh :_ *"..settings.lock_fosh.."*\n⚡️_Lock tags :_ *"..settings.lock_tag.."*\n⚡️_Lock Persian* :_ *"..settings.lock_arabic.."*\n⚡️_Lock flood :_ *"..settings.flood.."*\n⚡️_Lock spam :_ *"..settings.lock_spam.."*\n⚡️_Lock mention :_ *"..settings.lock_mention.."*\n⚡️_Lock webpage :_ *"..settings.lock_webpage.."*\n⚡️_Lock markdown :_ *"..settings.lock_markdown.."*\n⚡️_Bots protection :_ *"..settings.lock_bots.."*\n⚡️_Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n✋_welcome :_ *"..settings.welcome.."*\n\n 🔓Group lock List 🔓 \n\n⚡️_lock all : _ *"..settings.lock_all.."*\n⚡️_lock gif :_ *"..settings.lock_gif.."*\n⚡️_lock text :_ *"..settings.lock_text.."*\n⚡️_lock inline :_ *"..settings.lock_inline.."*\n⚡️_lock game :_ *"..settings.lock_game.."*\n⚡️_lock photo :_ *"..settings.lock_photo.."*\n⚡️_lock video :_ *"..settings.lock_video.."*\n⚡️_lock audio :_ *"..settings.lock_audio.."*\n⚡️_lock voice :_ *"..settings.lock_voice.."*\n⚡️_lock sticker :_ *"..settings.lock_sticker.."*\n⚡️_lock contact :_ *"..settings.lock_contact.."*\n⚡️_lock forward :_ *"..settings.lock_forward.."*\n⚡️_lock location :_ *"..settings.lock_location.."*\n⚡️_lock document :_ *"..settings.lock_document.."*\n⚡️_lock TgService :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_expire time :_ *"..expire.."*\n*____________________*\n*Language* : *EN*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "🔰*تنظیمات گروه*🔰\n\n🔐_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n🔐_قفل لینک :_ *"..settings.lock_link.."*\n🔐_قفل فحش :_ *"..settings.lock_fosh.."*\n🔐_قفل تگ :_ *"..settings.lock_tag.."*\n🔐_قفل فارسی* :_ *"..settings.lock_arabic.."*\n🔐_قفل پیام مکرر :_ *"..settings.flood.."*\n🔐_قفل هرزنامه :_ *"..settings.lock_spam.."*\n🔐_قفل فراخوانی :_ *"..settings.lock_mention.."*\n🔐_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n🔐_قفل فونت :_ *"..settings.lock_markdown.."*\n🔐_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n🔐_حداکثر پیام مکرر :_ *"..NUM_MSG_MAX.."*\n✋_پیام خوش آمد گویی :_ *"..settings.welcome.."*\n\n 🔓لیست قفلیت ها 🔓  \n\n🔐_قفل کردن همه : _ *"..settings.lock_all.."*\n🔐_قفل کردن تصاویر متحرک :_ *"..settings.lock_gif.."*\n🔐_قفل کردن  متن :_ *"..settings.lock_text.."*\n🔐_تبلیغات شیشه ای قفل :_ *"..settings.lock_inline.."*\n🔐_قفل کردن بازی  :_ *"..settings.lock_game.."*\n🔐_قفل کردن عکس :_ *"..settings.lock_photo.."*\n🔐_قفل کردن فیلم :_ *"..settings.lock_video.."*\n🔐_قفل کردن آهنگ :_ *"..settings.lock_audio.."*\n🔐_قفل کردن صدا :_ *"..settings.lock_voice.."*\n🔐_قفل کردن استیکر :_ *"..settings.lock_sticker.."*\n🔐_قفل کردن ارسال اطلاعات :_ *"..settings.lock_contact.."*\n🔐_قفل کردن فوروارد :_ *"..settings.lock_forward.."*\n🔐_قفل کردن ارسال مکان :_ *"..settings.lock_location.."*\n🔐_قفل کردن ارسال فایل :_ *"..settings.lock_document.."*\n🔐_قفل کردن اعلانات :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_تاریخ انقضا :_ *"..expire.."*\n*____________________*\n*زبان ربات* : *فارسی*"
+ text = "🔰*تنظیمات گروه*🔰\n\n⚡️_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n⚡️_قفل لینک :_ *"..settings.lock_link.."*\n⚡️_قفل فحش :_ *"..settings.lock_fosh.."*\n⚡️_قفل تگ :_ *"..settings.lock_tag.."*\n⚡️_قفل فارسی* :_ *"..settings.lock_arabic.."*\n⚡️_قفل پیام رگبار :_ *"..settings.flood.."*\n⚡️_قفل هرزنامه :_ *"..settings.lock_spam.."*\n⚡️_قفل فراخوانی :_ *"..settings.lock_mention.."*\n⚡️_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n⚡️_قفل فونت :_ *"..settings.lock_markdown.."*\n⚡️_محافظت در برابر ربات ها :_ *"..settings.lock_bots.."*\n⚡️_حداکثر پیام رگبار :_ *"..NUM_MSG_MAX.."*\n✋_پیام خوش آمد گویی :_ *"..settings.welcome.."*\n\n\n\n⚡️_قفل کردن همه : _ *"..settings.lock_all.."*\n⚡️_قفل کردن تصاویر متحرک :_ *"..settings.lock_gif.."*\n⚡️_قفل کردن  متن :_ *"..settings.lock_text.."*\n⚡️_تبلیغات شیشه ای قفل :_ *"..settings.lock_inline.."*\n⚡️_قفل کردن بازی  :_ *"..settings.lock_game.."*\n⚡️_قفل کردن عکس :_ *"..settings.lock_photo.."*\n⚡️_قفل کردن فیلم :_ *"..settings.lock_video.."*\n⚡️_قفل کردن آهنگ :_ *"..settings.lock_audio.."*\n⚡️_قفل کردن صدا :_ *"..settings.lock_voice.."*\n⚡️_قفل کردن استیکر :_ *"..settings.lock_sticker.."*\n⚡️_قفل کردن ارسال اطلاعات :_ *"..settings.lock_contact.."*\n⚡️_قفل کردن فوروارد :_ *"..settings.lock_forward.."*\n⚡️_قفل کردن ارسال مکان :_ *"..settings.lock_location.."*\n⚡️_قفل کردن ارسال فایل :_ *"..settings.lock_document.."*\n⚡️_قفل کردن اعلانات :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_تاریخ انقضا :_ *"..expire.."*\n*____________________*\n*زبان ربات* : *فارسی*"
 end
 return text
 end
@@ -2364,6 +2364,20 @@ tdcli_function ({
       end
    end
 if matches[1] == "remowner" and is_admin(msg) then
+  if matches[2] and string.match(matches[2], '^%d+$') then
+tdcli_function ({
+    ID = "GetUser",
+    user_id_ = matches[2],
+  }, action_by_id, {chat_id=msg.chat_id_,user_id=matches[2],cmd="setowner"})
+    end
+  if matches[2] and not string.match(matches[2], '^%d+$') then
+   tdcli_function ({
+      ID = "SearchPublicChat",
+      username_ = matches[2]
+    }, action_by_username, {chat_id=msg.chat_id_,username=matches[2],cmd="setowner"})
+      end
+   end
+if matches[1] == "remowner" and is_admin(msg) then
 if not matches[2] and tonumber(msg.reply_to_message_id_) ~= 0 then
     tdcli_function ({
       ID = "GetMessage",
@@ -2664,7 +2678,7 @@ end
    if not lang then
      rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر قفل.\n2⃣ اسپم قفل.\n3⃣ تبلیغ قفل.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی قفل .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
+       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام رگبار ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
  end
         else
      rules = "*Group Rules :*\n"..data[tostring(chat)]['rules']
@@ -2980,21 +2994,16 @@ text = [[
 ⚜️*!welcome disable*
 ⚜️_set welcome for group_
 〰〰〰〰〰
-🔱*!broadcast* text
-⚜️_Send Msg To All Groups_
-〰〰〰〰〰
-🔱*!autoleave enable*
-⚜️*!autoleave disable*
-⚜️_set Auto leave_
-
+@bom_bang_team
+-------
 ⚜️_You Can Use_ *[!/#]* _To Run The Commands_⚜️
 ]]
 
 elseif lang then
 text = [[
-------------------
+----------------------------
 🔐🔓-لیست قفل ها-🔓🔐
-------------------
+----------------------------
 🔐*!lock link*
 🔓*!unlock link*
 〰〰〰〰〰
@@ -3061,7 +3070,7 @@ text = [[
 🔐*!lock voice*
 🔓*!unlock voice*
 〰〰〰〰〰
-🔐*!lock contact*
+🔐*!lockcontact*
 🔓*!unlock contact*
 〰〰〰〰〰
 🔐*!lock tgservices*
@@ -3077,7 +3086,7 @@ text = [[
 🔐*!mt 0 1*
 🔓*!unmt*
 ......
-----بخش مخصوص مدیر----
+---------بخش مخصوص مدیر---------
 ......
 🔰 *!settings*
 💭 نمایش تنظیمات گروه
@@ -3159,10 +3168,11 @@ text = [[
 ⚜️*!welcome disable*
 💭 ست کردن و فعال و باز کردن خوش آمد گویی
 〰〰〰〰〰
-⚜️ @bom_bang_team ⚜️
+⚜️ @bom-bang-team ⚜️
 ...
 ]]
-return text4
+end
+return text
 end
 
 if matches[1] == "انلاینی" and is_mod(msg) then
@@ -3247,7 +3257,7 @@ else
    if not lang then
      rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر قفل.\n2⃣ اسپم قفل.\n3⃣ تبلیغ قفل.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی قفل .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
+       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام رگبار قفل.\n2⃣ اسپم قفل.\n3⃣ تبلیغ قفل.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی قفل .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
  end
 end
 if data.username_ then
@@ -3288,6 +3298,8 @@ end
 return {
 patterns ={
 "^[!/#](انلاینی)$",
+"^[!/#](قفل)$",
+"^[!/#](قفل)$",
 "^[!/#](id)$",
 "^[!/#](id) (.*)$",
 "^[!/#](pin)$",
@@ -3337,6 +3349,5 @@ patterns ={
 run=run,
 pre_process = pre_process
 }
-end
 -- کد های پایین در ربات نشان داده نمیشوند
 -- @bom_bang_team
