@@ -3194,7 +3194,7 @@ end
        if not lang then
 				return "_Group_ *welcome* _is already enabled_"
        elseif lang then
-				return "_خوش آمد گویی از قبل فعال بود_"
+				return "_خوشآمد گویی از قبل فعال بود_"
            end
 			else
 		data[tostring(chat)]['settings']['welcome'] = "yes"
@@ -3202,7 +3202,7 @@ end
        if not lang then
 				return "_Group_ *welcome* _has been enabled_"
        elseif lang then
-				return "_خوش آمد گویی فعال شد_"
+				return "_خوشآمد گویی فعال شد_"
           end
 			end
 		end
@@ -3213,7 +3213,7 @@ end
       if not lang then
 				return "_Group_ *Welcome* _is already disabled_"
       elseif lang then
-				return "_خوش آمد گویی از قبل فعال نبود_"
+				return "_خوشآمد گویی از قبل فعال نبود_"
          end
 			else
 		data[tostring(chat)]['settings']['welcome'] = "no"
@@ -3221,7 +3221,7 @@ end
       if not lang then
 				return "_Group_ *welcome* _has been disabled_"
       elseif lang then
-				return "_خوش آمد گویی باز شد_"
+				return "_خوشآمد گویی غیرفعال شد_"
           end
 			end
 		end
@@ -3232,7 +3232,7 @@ end
        if not lang then
 		return "_Welcome Message Has Been Set To :_\n*"..matches[2].."*\n\n*You can use :*\n_{rules} ➣ Show Group Rules_\n_{name} ➣ New Member First Name_\n_{username} ➣ New Member Username_"
        else
-		return "_پیام خوش آمد گویی تنظیم شد به :_\n*"..matches[2].."*\n\n*شما میتوانید از*\n_{rules} ➣ نمایش قوانین گروه_\n_{name} ➣ نام کاربر جدید_\n_{username} ➣ نام کاربری کاربر جدید_\n_استفاده کنید_"
+		return "_پیام خوشآمد گویی تنظیم شد به :_\n*"..matches[2].."*\n\n*شما میتوانید از*\n_{rules} ➣ نمایش قوانین گروه_\n_{name} ➣ نام کاربر جدید_\n_{username} ➣ نام کاربری کاربر جدید_\n_استفاده کنید_"
      end
 	end
 end
@@ -3249,9 +3249,9 @@ local lang = redis:get(hash)
      welcome = administration[arg.chat_id]['setwelcome']
       else
      if not lang then
-     welcome = "*hi my friend happy new years*"
+     welcome = "*hi my friend welcome dude*"
     elseif lang then
-     welcome = "_سلام دوست من روز خوبی داشته باشی_"
+     welcome = "_سلام دوست عزیز خوش اومدی_"
         end
      end
  if administration[tostring(arg.chat_id)]['rules'] then
@@ -3260,7 +3260,7 @@ else
    if not lang then
      rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام رگبار قفل.\n2⃣ اسپم قفل.\n3⃣ تبلیغ قفل.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی قفل .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
+       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n"
  end
 end
 if data.username_ then
