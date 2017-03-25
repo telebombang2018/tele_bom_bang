@@ -34,18 +34,18 @@ end
           flood = 'yes',
           lock_bots = 'yes',
           welcome = 'yes',
-                  lock_forward = 'no',
-                  lock_audio = 'no',
-                  lock_video = 'no',
-                  lock_contact = 'no',
-                  lock_text = 'no',
-                  lock_photos = 'no',
-                  lock_gif = 'no',
-                  lock_location = 'no',
-                  lock_document = 'no',
-                  lock_sticker = 'no',
-                  lock_voice = 'no',
-                  lock_all = 'no'
+          lock_forward = 'no',
+          lock_audio = 'no',
+          lock_video = 'no',
+          lock_contact = 'no',
+          lock_text = 'no',
+          lock_photos = 'no',
+          lock_gif = 'no',
+          lock_location = 'no',
+          lock_document = 'no',
+          lock_sticker = 'no',
+          lock_voice = 'no',
+          lock_all = 'no'
           }
       }
   save_data(_config.moderation.data, data)

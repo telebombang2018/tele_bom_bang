@@ -2509,7 +2509,7 @@ end
 end
 if matches[1] == "قفل" and is_mod(msg) then
 local target = msg.chat_id_
-if matches[2] == "همه چیز" then
+if matches[2] == "همه" then
 return lock_all(msg, data, target)
 end
 if matches[2] == "گیف" then
@@ -2558,7 +2558,7 @@ end
 
 if matches[1] == "باز کردن" and is_mod(msg) then
 local target = msg.chat_id_
-if matches[2] == "همه چیز" then
+if matches[2] == "همه" then
 return unlock_all(msg, data, target)
 end
 if matches[2] == "گیف" then
@@ -2868,7 +2868,7 @@ local lang = redis:get(hash)
 return "_Group Language Set To:_ EN"
   elseif matches[2] == "fa" then
 redis:set(hash, true)
-return "*زبان گروهتنظیم شد به : فارسی*"
+return "*زبان گروه تنظیم شد به : فارسی*"
 end
 end
 
@@ -3067,8 +3067,8 @@ text = [[
 🔐*قفل اینلاین*
 🔓*باز کردن اینلاین*
 〰〰〰〰〰
-🔐*قفل همه چیز*
-🔓*باز کردن همه چیز*
+🔐*قفل همه*
+🔓*باز کردن همه*
 〰〰〰〰〰
 عدد اول ساعت عدد دوم دقیقه
 🔐*!mt 0 1*
@@ -3207,7 +3207,7 @@ end
       if not lang then
 				return "_Group_ *welcome* _has been disabled_"
       elseif lang then
-				return "_خوش آمد گویی باز شد_"
+				return "_خوش امد گویی غیر فعال شد_"
           end
 			end
 		end
@@ -3235,9 +3235,9 @@ local lang = redis:get(hash)
      welcome = administration[arg.chat_id]['setwelcome']
       else
      if not lang then
-     welcome = "*Welcome Dude*"
+     welcome = "*hi my friend happy new years*"
     elseif lang then
-     welcome = "_خوش آمدید_"
+     welcome = "_سلام دوست من روز خوبی داشته باشی_"
         end
      end
  if administration[tostring(arg.chat_id)]['rules'] then
@@ -3252,8 +3252,6 @@ end
 if data.username_ then
 user_name = "@"..check_markdown(data.username_)
 else
-user_name = ""
-end
 		local welcome = welcome:gsub("{rules}", rules)
 		local welcome = welcome:gsub("{name}", check_markdown(data.first_name_))
 		local welcome = welcome:gsub("{username}", user_name)
@@ -3337,5 +3335,6 @@ patterns ={
 run=run,
 pre_process = pre_process
 }
+end
 -- کد های پایین در ربات نشان داده نمیشوند
 -- @bom_bang_team
