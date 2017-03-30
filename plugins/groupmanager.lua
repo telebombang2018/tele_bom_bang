@@ -3076,8 +3076,8 @@ text = [[
 🔐*!lockcontact*
 🔓*!unlock contact*
 〰〰〰〰〰
-🔐*!lock tgservices*
-🔓*!unlock tgservices*
+🔐*!lock tgservice*
+🔓*!unlock tgservice*
 〰〰〰〰〰
 🔐*!lock inline*
 🔓*!unlock inline *
