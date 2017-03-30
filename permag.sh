@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/tele_bom_bang
+cd $HOME/permag.ir
 
 install() {
 	    cd tg
@@ -31,7 +31,7 @@ if [ ! -f ./tg/tgcli ]; then
     exit 1
 fi
    echo -e "\033[38;5;208m"
-   echo -e "     > best anti spam bom bang source pluse @bom_bang_team                       "
+   echo -e "     > best anti spam source permag.ir                       "
    echo -e "                                              \033[0;00m"
    echo -e "\e[36m"
    ./tg/tgcli -s ./bot/bot.lua $@

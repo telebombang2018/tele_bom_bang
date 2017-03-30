@@ -408,8 +408,4 @@ return {
 	pre_process = pre_process
 }
 -- کد های پایین در ربات نشان داده نمیشوند
--- http://permag.ir
--- @permag_ir
--- @permag_bots
--- @permag
--- permag
+-- http://bom_bang_team
