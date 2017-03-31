@@ -94,16 +94,16 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》permag.ir v3
+    info_text = [[》bom_bang v3
 
 🔰Our channel :
 》@sudo_monsters《
 
 🔰Our channel2 :
-》@tele_bom_bang《
+》@bom_bang_team《
 
 🔰Our channel3 :
-》@telebombang《
+》@bombangteam《
 
 🔰Our website :
 》http://telebombang2018
