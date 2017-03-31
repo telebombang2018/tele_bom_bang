@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 310083510 -- Put Here Your Bot ID
+our_id = 123456789 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -97,7 +97,16 @@ function create_config( )
     info_text = [[》permag.ir v3
 
 🔰Our channel :
-》@bombangteam
+》@sudo_monsters《
+
+🔰Our channel2 :
+》@tele_bom_bang《
+
+🔰Our channel3 :
+》@telebombang《
+
+🔰Our website :
+》http://telebombang2018
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -885,4 +894,7 @@ elseif msg.content_.ID == "MessageGame" then
   end
 
 end
--- http://bom_bang_team
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag
