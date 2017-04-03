@@ -86,7 +86,7 @@ function create_config( )
     "tools",
     "expiretime",
     "mute-time",
-    "del",
+    "del_msg",
 	"lock-fosh"
 	
  },
