@@ -629,4 +629,4 @@ run = run
 }
 
 -- کد های پایین در ربات نشان داده نمیشوند
--- http://lock_team
+-- http://bom_bang_team

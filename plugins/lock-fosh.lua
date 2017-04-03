@@ -100,6 +100,4 @@ return {
   pre_process = pre_process
 }
 
--- http://permag.ir
--- @permag_ir
--- @permag_bots
+-- http://bom_bang_team

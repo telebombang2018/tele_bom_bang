@@ -77,10 +77,10 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "banhammer",
-	"banhammer-fa",
-    "groupmanager",
-	"groupmanager-fa",
+    "bansettings_english",
+	"bansettings_farsi",
+    "gpsettings_english",
+	"gpsettings_farsi",
     "msg-checks",
     "plugins",
     "tools",
@@ -894,7 +894,4 @@ elseif msg.content_.ID == "MessageGame" then
   end
 
 end
--- http://permag.ir
--- @permag_ir
--- @permag_bots
--- @permag
+-- http://bom_bang_team
