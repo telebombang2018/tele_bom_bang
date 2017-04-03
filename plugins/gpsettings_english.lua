@@ -2899,104 +2899,104 @@ text = [[
 〰〰〰〰〰〰〰〰
 🔱*!promote* `[username|id|reply]` 
 ⚜️_Promote User To Group Admin_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!demote* `[username|id|reply]` 
 ⚜️_Demote User From Group Admins List_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!setflood* `[1-50]`
 ⚜️_Set Flooding Number_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!silent* `[username|id|reply]` 
 ⚜️_Silent User From Group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!unsilent* `[username|id|reply]` 
 ⚜️_Unsilent User From Group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!kick* `[username|id|reply]` 
 ⚜️_Kick User From Group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!ban* `[username|id|reply]` 
 ⚜️_Ban User From Group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!unban* `[username|id|reply]` 
 ⚜️_UnBan User From Group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!res* `[username]`
 ⚜️_Show User ID_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!id* `[reply]`
 ⚜️_Show User ID_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!whois* `[id]`
 ⚜️_Show User's Username And Name_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!lock* `[link | tag | arabic | edit | fosh | webpage | bots | spam | flood | markdown | mention]`
 ⚜️_If This Actions Lock, Bot Check Actions And Delete Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!unlock* `[link | tag | arabic | edit | fosh | webpage | bots | spam | flood | markdown | mention]`
 ⚜️_If This Actions Unlock, Bot Not Delete Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!lock(new)* `[gifs | photo | tgservice | document | sticker | video | text | forward | location | audio | voice | contact | all]`
 ⚜️_If This Actions Lock, Bot Check Actions And Delete Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!unlock(new)* `[gif | photo | tgservice | document | sticker | video | tgservice | text | forward | inline | location | audio | voice | contact | all]`
 ⚜️_If This Actions Unlock, Bot Not Delete Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!set*`[rules | name | photo | link | about]`
 ⚜️_Bot Set Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!clean* `[bans | mods | bots | rules | about | silentlist]`   
 ⚜️_Bot Clean Them_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!pin* `[reply]`
 ⚜️_Pin Your Message_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!unpin* 
 ⚜️_Unpin Pinned Message_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!settings*
 ⚜️_Show Group Settings_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!silentlist*
 ⚜️_Show Silented Users List_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!banlist*
 ⚜️_Show Banned Users List_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!ownerlist*
 ⚜️_Show Group Owners List_ 
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!modlist* 
 ⚜️_Show Group Moderators List_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!rules*
 ⚜️_Show Group Rules_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!gpinfo*
 ⚜️_Show Group Information_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!link*
 ⚜️_Show Group Link_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!mt 0 1* (0h 1m)
 ⚜️*!unmt*
 ⚜️_lock All With Time_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!filter* 
 ⚜️*!unfilter* 
 ⚜️_filter word_
 ⚜️*!filterlist* 
 ⚜️_Show Filter List_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!del* 1-100
 ⚜️*!delall* `[reply]`
 ⚜️_Delete Message_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱*!setwelcome* متن پیام
 ⚜️*!welcome enable*
 ⚜️*!welcome disable*
 ⚜️_set welcome for group_
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 ⚜️ @bombangteam ⚜️
 -------
 ⚜️_You Can Use_ *[!/#]* _To Run The Commands_⚜️
@@ -3009,82 +3009,82 @@ text = [[
 --------------------------------------------------------
 🔐*!lock link*
 🔓*!unlock link*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock tag*
 🔓*!unlock tag*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock arabic*
 🔓*!unlock arabic*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock webpage*
 🔓*!unlock webpage*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock edit*
 🔓*!unlock edit*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock bots*
 🔓*!unlock bots*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock spam*
 🔓*!unlock spam*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock flood*
 🔓*!unlock flood*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock markdown*
 🔓*!unlock markdown*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock mention*
 🔓*!unlock mention*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock fosh*
 🔓*!unlock fosh*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock gif*
 🔓*!unlock gif*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock photo*
 🔓*!unlock photo*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock document*
 🔓*!unlock document*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock sticker*
 🔓*!unlock sticker*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock video*
 🔓*!unlock video*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock text*
 🔓*!unlock text*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock forward*
 🔓*!unlock forward*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock game*
 🔓*!unlock game*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock location*
 🔓*!unlock location*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock audio*
 🔓*!unlock audio*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock voice*
 🔓*!unlock voice*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lockcontact*
 🔓*!unlock contact*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock tgservice*
 🔓*!unlock tgservice*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock inline*
 🔓*!unlock inline *
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔐*!lock all*
 🔓*!unlock all*
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 ✔️عدد اول ساعت عدد دوم دقیقه✔️
 🔐*!mt 0 1*
 🔓*!unmt*
@@ -3093,79 +3093,79 @@ text = [[
 ......
 🔰 *!settings*
 💭 نمایش تنظیمات گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!silentlist*
 💭 نمایش لیست سایلنت شده ها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!banlist*
 💭 نمایش لیست مسدود شده ها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!modlist*
 💭 نمایش لیست ادمین ها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!gpinfo*
 💭 نمایش اطلاعات گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!promote* `[username|id|reply]`
 💭 تعیین ادمین گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!demote* `[username|id|reply]` 
 💭 حذف ادمین گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!setflood* `[1-50]`
 💭 تعیین میزان مجاز پست های رگباری
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!res* `[username]`
 ⚜️ *!id* `[reply]`
 💭 نمایش آیدی یوزر 
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!whois* `[id]`
 💭 نمایش یوزر آیدی
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!silent* `[username|id|reply]`
 ⚜️ *!unsilent* `[username|id|reply]`
 💭  ساکت کردن یک کاربر
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!kick* `[username|id|reply]`
 💭 اخراج کردن یک کاربر
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!ban* `[username|id|reply]`
 ⚜️ *!unban* `[username|id|reply]`
 💭  مسدود کردن یک کاربر
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!setlink*
 ⚜️ *!link* نمایش لینک
 🔱 *!setrules* قوانین را بنویسید
 ⚜️ *!rules* نمایش قوانین
 💭  ثبت لینک و قوانین و نمایش آنها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!clean bans*
 💭  پاک کردن لیست مسدود شده ها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!clean rules*
 💭  پاک کردن قوانین گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!clean silentlist*
 💭  پاک کردن لیست سایلنت شده ها
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!pin* `[reply]`
 ⚜️ *!unpin* 
 💭 سنجاق کردن متن در گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!filter* 
 ⚜️ *!unfilter* 
 💭 فیلتر کلمات
 ⚜️ *!filterlist* 
 💭 نمایش لیست فیلتر
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!del* 1-100
 ⚜️ *!delall* `[reply]`
 💭 حذف پیام های گروه حداکثر 100
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 🔱 *!setexpire*  30
 ⚜️ *!expire*
 💭 تنظیم انقضای گروه
-〰〰〰〰〰〰〰〰〰
+〰〰〰〰〰〰〰〰〰〰〰
 
 ⚜️ @bombangteam ⚜️
 ...
