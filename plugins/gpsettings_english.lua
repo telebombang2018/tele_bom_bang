@@ -2891,7 +2891,6 @@ end
 if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
-[In reply to MAFIA_BOY]
 .:
 🔐 راهنما قفل های【اصلی】🔐
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
@@ -3124,7 +3123,6 @@ text = [[
 
 elseif lang then
 text = [[
-[In reply to MAFIA_BOY]
 .:
 🔐 راهنما قفل های【اصلی】🔐
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
