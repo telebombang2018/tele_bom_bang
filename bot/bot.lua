@@ -87,6 +87,11 @@ function create_config( )
     "expiretime",
     "mute-time",
     "del_msg",
+	"nerkh",
+	"Poker",
+	"Write",
+	"Ping",
+	"monshi",
 	"lock-fosh"
 	
  },
