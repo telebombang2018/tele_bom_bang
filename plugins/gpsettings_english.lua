@@ -1411,11 +1411,10 @@ local expiretime = redis:hget('expiretime', msg.chat_id_)
 
 if not lang then
 local settings = data[tostring(target)]["settings"] 
- text = "🔰*Group Settings*🔰\n\n⚡️_Lock edit :_ *"..settings.lock_edit.."*\n⚡️_Lock links :_ *"..settings.lock_link.."*\n⚡️_Lock fosh :_ *"..settings.lock_fosh.."*\n⚡️_Lock tags :_ *"..settings.lock_tag.."*\n⚡️_Lock Persian* :_ *"..settings.lock_arabic.."*\n⚡️_Lock flood :_ *"..settings.flood.."*\n⚡️_Lock spam :_ *"..settings.lock_spam.."*\n⚡️_Lock mention :_ *"..settings.lock_mention.."*\n⚡️_Lock webpage :_ *"..settings.lock_webpage.."*\n⚡️_Lock markdown :_ *"..settings.lock_markdown.."*\n⚡️_Bots protection :_ *"..settings.lock_bots.."*\n⚡️_Flood sensitivity :_ *"..NUM_MSG_MAX.."*\n✋_welcome :_ *"..settings.welcome.."*\n⚡️_lock all : _ *"..settings.lock_all.."*\n⚡️_lock gif :_ *"..settings.lock_gif.."*\n⚡️_lock text :_ *"..settings.lock_text.."*\n⚡️_lock inline :_ *"..settings.lock_inline.."*\n⚡️_lock game :_ *"..settings.lock_game.."*\n⚡️_lock photo :_ *"..settings.lock_photo.."*\n⚡️_lock video :_ *"..settings.lock_video.."*\n⚡️_lock audio :_ *"..settings.lock_audio.."*\n⚡️_lock voice :_ *"..settings.lock_voice.."*\n⚡️_lock sticker :_ *"..settings.lock_sticker.."*\n⚡️_lock contact :_ *"..settings.lock_contact.."*\n*____________________*\n⚡️_lock forward :_ *"..settings.lock_forward.."*\n⚡️_lock location :_ *"..settings.lock_location.."*\n⚡️_lock document :_ *"..settings.lock_document.."*\n⚡️_lock TgService :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_expire time :_ *"..expire.."*\n*____________________*\n*Language* : *EN*"
+ text = "⚙️*Group Settings*⚙️\n*︾︾︾︾︾︾︾︾︾︾︾︾︾*\n● 》_Lock Edit ➢_ *"..settings.lock_edit.."*\n● 》_Lock Links ➢_ *"..settings.lock_link.."*\n● 》_Lock Fosh ➢_ *"..settings.lock_fosh.."*\n● 》_Lock Tags ➢_ *"..settings.lock_tag.."*\n● 》_Lock Persian* ➢_ *"..settings.lock_arabic.."*\n● 》_Lock Flood ➢_ *"..settings.flood.."*\n● 》_Lock Spam ➢_ *"..settings.lock_spam.."*\n● 》_Lock Mention ➢_ *"..settings.lock_mention.."*\n● 》_Lock Webpage ➢_ *"..settings.lock_webpage.."*\n● 》_Lock Markdown ➢_ *"..settings.lock_markdown.."*\n● 》_Lock Bots ➢_ *"..settings.lock_bots.."*\n● 》_Lock Gif ➢_ *"..settings.lock_gif.."*\n● 》_Lock Text ➢_ *"..settings.lock_text.."*\n● 》_Lock Inline ➢_ *"..settings.lock_inline.."*\n● 》_Lock Game ➢_ *"..settings.lock_game.."*\n● 》_Lock Photo ➢_ *"..settings.lock_photo.."*\n● 》_Lock Video ➢_ *"..settings.lock_video.."*\n● 》_Lock Audio ➢_ *"..settings.lock_audio.."*\n● 》_Lock Voice ➢_ *"..settings.lock_voice.."*\n● 》_Lock Sticker ➢_ *"..settings.lock_sticker.."*\n● 》_Lock Contact ➢_ *"..settings.lock_contact.."*\n● 》_lock forward ➢_ *"..settings.lock_forward.."*\n● 》_lock TgService ➢_ *"..settings.lock_tgservice.."*\n● 》_lock location ➢_ *"..settings.lock_location.."*\n● 》_lock document ➢_ *"..settings.lock_document.."*\n● 》_Lock All ➢ _ *"..settings.lock_all.."*\n*︾︾︾︾︾︾︾︾︾︾︾︾︾*\n● 》_Set Flood ➢_ *"..NUM_MSG_MAX.."*\n● 》_Welcome ➢_ *"..settings.welcome.."*\n● 》_Expire Time ➢_ *"..expire.."*\n*︾︾︾︾︾︾︾︾︾︾︾︾︾Enable✔️➰ Disable✖️︾︾︾︾︾︾︾︾︾︾︾︾︾*\n*Language* ➢ *EN*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "🔰*تنظیمات گروه*🔰\n\n⚡️_قفل ویرایش پیام :_ *"..settings.lock_edit.."*\n⚡️_قفل لینک :_ *"..settings.lock_link.."*\n⚡️_قفل فحش :_ *"..settings.lock_fosh.."*\n⚡️_قفل تگ :_ *"..settings.lock_tag.."*\n⚡️_قفل فارسی* :_ *"..settings.lock_arabic.."*\n⚡️_قفل پیام رگبار :_ *"..settings.flood.."*\n⚡️_قفل هرزنامه :_ *"..settings.lock_spam.."*\n⚡️_قفل فراخوانی :_ *"..settings.lock_mention.."*\n⚡️_قفل صفحات وب :_ *"..settings.lock_webpage.."*\n⚡️_قفل فونت :_ *"..settings.lock_markdown.."*\n⚡️_قفل ورود ربات ها :_ *"..settings.lock_bots.."*\n⚡️_حداکثر پیام رگبار :_ *"..NUM_MSG_MAX.."*\n✋_پیام خوش آمد گویی :_ *"..settings.welcome.."*\n⚡️_قفل کردن همه : _ *"..settings.lock_all.."*\n⚡️_قفل کردن تصاویر متحرک :_ *"..settings.lock_gif.."*\n⚡️_قفل کردن  متن :_ *"..settings.lock_text.."*\n⚡️_قفل کیبورد شیشه ای :_ *"..settings.lock_inline.."*\n⚡️_قفل کردن بازی  :_ *"..settings.lock_game.."*\n⚡️_قفل کردن عکس :_ *"..settings.lock_photo.."*\n⚡️_قفل کردن فیلم :_ *"..settings.lock_video.."*\n⚡️_قفل کردن آهنگ :_ *"..settings.lock_audio.."*\n⚡️_قفل کردن صدا :_ *"..settings.lock_voice.."*\n⚡️_قفل کردن استیکر :_ *"..settings.lock_sticker.."*\n⚡️_قفل کردن ارسال مخاطب :_ *"..settings.lock_contact.."*\n*____________________*\n⚡️_قفل کردن فوروارد :_ *"..settings.lock_forward.."*\n⚡️_قفل کردن ارسال مکان :_ *"..settings.lock_location.."*\n⚡️_قفل کردن ارسال فایل :_ *"..settings.lock_document.."*\n⚡️_قفل کردن اعلانات :_ *"..settings.lock_tgservice.."*\n*__________________*\n⏱_تاریخ انقضا :_ *"..expire.."*\n*____________________*\n*زبان ربات* : *فارسی*"
-end
+ text = "🔰*تنظیمات گروه*🔰\n\n● 》_قفل ویرایش ↫_ *"..settings.lock_edit.."*\n● 》_قفل لینک ↫_ *"..settings.lock_link.."*\n● 》_قفل فحش ↫_ *"..settings.lock_fosh.."*\n● 》_قفل تگ ↫_ *"..settings.lock_tag.."*\n● 》_قفل فارسی* ↫_ *"..settings.lock_arabic.."*\n● 》_قفل فلود ↫_ *"..settings.flood.."*\n● 》_قفل اسپم ↫_ *"..settings.lock_spam.."*\n● 》_قفل فراخوانی ↫_ *"..settings.lock_mention.."*\n● 》_قفل وبسایت ↫_ *"..settings.lock_webpage.."*\n● 》_قفل فونت ↫_ *"..settings.lock_markdown.."*\n● 》_قفل ربات ↫_ *"..settings.lock_bots.."*\n● 》_قفل گیف ↫_ *"..settings.lock_gif.."*\n● 》_قفل  متن ↫_ *"..settings.lock_text.."*\n● 》_قفل کیبورد شیشه ای ↫_ *"..settings.lock_inline.."*\n● 》_قفل بازی  ↫_ *"..settings.lock_game.."*\n● 》_قفل عکس ↫_ *"..settings.lock_photo.."*\n● 》_قفل فیلم ↫_ *"..settings.lock_video.."*\n● 》_قفل آهنگ ↫_ *"..settings.lock_audio.."*\n● 》_قفل صدا ↫_ *"..settings.lock_voice.."*\n● 》_قفل استیکر ↫_ *"..settings.lock_sticker.."*\n● 》_قفل فوروارد ↫_ *"..settings.lock_forward.."*\n● 》_قفل مکان ↫_ *"..settings.lock_location.."*\n● 》_قفل فایل ↫_ *"..settings.lock_document.."*\n● 》_قفل اعلانات ↫_ *"..settings.lock_tgservice.."*\n● 》_قفل مخاطب ↫_ *"..settings.lock_contact.."*\n● 》_قفل همه ↫ _ *"..settings.lock_all.."*\n*︾︾︾︾︾︾︾︾︾︾︾︾*\n● 》_تنظیم فلود ↫_ *"..NUM_MSG_MAX.."*\n● 》_پیام خوش آمد گویی ↫_ *"..settings.welcome.."*\n*︾︾︾︾︾︾︾︾︾︾︾︾*\n● 》_تاریخ انقضا ↫_ *"..expire.."*\n*︾︾︾︾︾︾︾︾︾︾︾︾*\n*زبان ربات* ↫ *فارسی*"end
 if not lang then
 text = string.gsub(text, "yes", "✅")
  text =  string.gsub(text, "no", "☑️")
@@ -3004,171 +3003,235 @@ text = [[
 
 elseif lang then
 text = [[
---------------------------------------------------------
-🔐🔓---لیست قفل ها---🔓🔐
---------------------------------------------------------
-🔐*!lock link*
-🔓*!unlock link*
+[In reply to MAFIA_BOY]
+.:
+🔐 راهنما قفل های【اصلی】🔐
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل لینک 
+🔸باز کردن لینک
+🔹lock link
+🔸unlock link
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل تگ
+🔸باز کردن تگ
+🔹lock tag
+🔸unlock tag
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل ویرایش
+🔸باز کردن ویرایش
+🔹lock edit
+🔸unlock edit
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فحش
+🔸باز کردن فحش
+🔹 lock fosh
+🔸 unlock fosh
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فارسی
+🔸باز کردن فارسی
+🔹lock arabic
+🔸unlock arabic
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل وبسایت ها
+🔸باز کردن وبسایت ها
+🔹lock webpage
+🔸unlock webpage
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل ربات
+🔸باز کردن ربات 
+🔹lock bots
+🔸unlock bots
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل اسپم
+🔸باز کردن اسپم
+🔹lock spam
+🔸unlock spam
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فلود
+🔸باز کردن فلود
+🔹lock flood
+🔸unlock flood
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄ 
+🔹قفل  فونت
+🔸باز کردن فونت
+🔹lock markdown
+🔸unlock markdown
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فراخوانی
+🔸باز کردن فراخوانی
+🔹lock mention 
+🔸unlock mention
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock tag*
-🔓*!unlock tag*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock arabic*
-🔓*!unlock arabic*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock webpage*
-🔓*!unlock webpage*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock edit*
-🔓*!unlock edit*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock bots*
-🔓*!unlock bots*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock spam*
-🔓*!unlock spam*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock flood*
-🔓*!unlock flood*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock markdown*
-🔓*!unlock markdown*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock mention*
-🔓*!unlock mention*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock fosh*
-🔓*!unlock fosh*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock gif*
-🔓*!unlock gif*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock photo*
-🔓*!unlock photo*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock document*
-🔓*!unlock document*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock sticker*
-🔓*!unlock sticker*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock video*
-🔓*!unlock video*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock text*
-🔓*!unlock text*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock forward*
-🔓*!unlock forward*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock game*
-🔓*!unlock game*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock location*
-🔓*!unlock location*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock audio*
-🔓*!unlock audio*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock voice*
-🔓*!unlock voice*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lockcontact*
-🔓*!unlock contact*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock tgservice*
-🔓*!unlock tgservice*
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock inline*
-🔓*!unlock inline *
-〰〰〰〰〰〰〰〰〰〰〰
-🔐*!lock all*
-🔓*!unlock all*
-〰〰〰〰〰〰〰〰〰〰〰
-✔️عدد اول ساعت عدد دوم دقیقه✔️
-🔐*!mt 0 1*
-🔓*!unmt*
-......
----------بخش مخصوص مدیر--------
-......
-🔰 *!settings*
-💭 نمایش تنظیمات گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!silentlist*
-💭 نمایش لیست سایلنت شده ها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!banlist*
-💭 نمایش لیست مسدود شده ها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!modlist*
-💭 نمایش لیست ادمین ها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!gpinfo*
-💭 نمایش اطلاعات گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!promote* `[username|id|reply]`
-💭 تعیین ادمین گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!demote* `[username|id|reply]` 
-💭 حذف ادمین گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!setflood* `[1-50]`
-💭 تعیین میزان مجاز پست های رگباری
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!res* `[username]`
-⚜️ *!id* `[reply]`
-💭 نمایش آیدی یوزر 
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!whois* `[id]`
-💭 نمایش یوزر آیدی
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!silent* `[username|id|reply]`
-⚜️ *!unsilent* `[username|id|reply]`
-💭  ساکت کردن یک کاربر
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!kick* `[username|id|reply]`
-💭 اخراج کردن یک کاربر
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!ban* `[username|id|reply]`
-⚜️ *!unban* `[username|id|reply]`
-💭  مسدود کردن یک کاربر
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!setlink*
-⚜️ *!link* نمایش لینک
-🔱 *!setrules* قوانین را بنویسید
-⚜️ *!rules* نمایش قوانین
-💭  ثبت لینک و قوانین و نمایش آنها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!clean bans*
-💭  پاک کردن لیست مسدود شده ها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!clean rules*
-💭  پاک کردن قوانین گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!clean silentlist*
-💭  پاک کردن لیست سایلنت شده ها
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!pin* `[reply]`
-⚜️ *!unpin* 
-💭 سنجاق کردن متن در گروه
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!filter* 
-⚜️ *!unfilter* 
-💭 فیلتر کلمات
-⚜️ *!filterlist* 
-💭 نمایش لیست فیلتر
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!del* 1-100
-⚜️ *!delall* `[reply]`
-💭 حذف پیام های گروه حداکثر 100
-〰〰〰〰〰〰〰〰〰〰〰
-🔱 *!setexpire*  30
-⚜️ *!expire*
-💭 تنظیم انقضای گروه
-〰〰〰〰〰〰〰〰〰〰〰
+🔐راهنما قفل های【فرعی】🔐
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل گیف
+🔸 باز کردن گیف
+🔹 !lock gif
+🔸 !unlock gif
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل عکس
+🔸 باز کردن عکس
+ 🔹 !lock photo
+🔸  !unlock photo
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فایل
+🔸 باز کردن فایل
+🔹 !lock document 
+🔸 !unlock document
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل استیکر
+🔸 باز کردن استیکر
+🔹  !lock sticker
+🔸 !unlock sticker
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فیلم 
+🔸 باز کردن فیلم
+🔹 !lock video
+🔸 !unlock video
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل متن
+🔸 باز کردن متن
+🔹 !lock text
+🔸 !unlock text
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فروارد
+🔸 باز کردن فروارد
+🔹  !lock forward
+🔸  !unlock forward
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل ویس
+🔸 باز کردن ویس
+🔹  !lock voice
+🔸 !unlock voice
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل اطلاعات تماس
+🔸 باز کردن اطلاعات تماس
+🔹  !lock contact
+🔸 !unlock contact
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل همه 
+🔸 باز کردن همه 
+🔹 !lock all
+🔸 !unlock all
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل  اینلاین
+🔸 باز کردن اینلاین
+🔹 !lock inline
+🔸 !unlock inline
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+‼️ توجه ‼️
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
 
-⚜️ @bombangteam ⚜️
-...
+قفل لینک (!lock link)
+باز کردن لینک (!unlock link)
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+〰〰〰〰〰〰〰〰〰〰〰
+🔷🔘🔶 راهنمای مدیریتی 🔶🔘🔷
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setowner [username|id|reply] 
+🔷 مدیر 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !remowner [username|id|reply] 
+ 🔶 حذف مدیر  【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !promote [username|id|reply] 
+🔷 ادمین 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !demote [username|id|reply] 
+🔶 حذف ادمین 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setflood [1-50]
+🔷 تنظیم فلود 【50-1】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !silent [username|id|reply] 
+🔶 سایلنت 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unsilent [username|id|reply] 
+🔷 رفع سایلنت 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !kick [username|id|reply] 
+🔶 اخراج 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !ban [username|id|reply] 
+🔷 مسدود 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unban [username|id|reply] 
+🔶 رفع مسدود 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !res [username]
+🔷 رس 【نام کاربری】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !id [reply]
+🔶 ایدی 【ریپلای】 
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !whois [id]
+🔷 چه کسی 【ایدی】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !set[rules | name | photo | link | about ]
+🔶 تنظیم 【قوانین | اسم عکس | لینک | درباره گروه 】
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !clean [bans | mods | bots | rules | about | silentlist | filterlist | welcome]   
+🔷 پاک کردن 【 لیست مسدود| مدیران| ربات | قوانین | درباره | لیست سایلنت |  لیست فیلتر | ولکام 】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !filter [word]
+🔶 فیلتر‌【کلمه مورد نظر】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unfilter [word]
+🔷 رفع فیلتر 【کلمه مورد نظر】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !pin [reply]
+🔶 سنجاق 【ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unpin [reply]
+🔷 حذف سنجاق【ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !welcome enable/disable
+🔶 ولکام  [فعال - غیر فعال]
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !settings
+🔷  تنظیمات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !silentlist
+🔷 لیست سایلنت
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !filterlist
+🔶 لیست فیلتر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !banlist
+🔷 لیست مسدود
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !ownerlist
+🔶 لیست مدیران
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !modlist 
+🔷 لیست ادمین ها
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !rules
+🔶 قوانین
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !about
+🔷  درباره گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !id
+🔶 ایدی
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !gpinfo
+🔷  اطلاعات گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !link
+🔶  لینک 
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setwelcome [text]
+🔷 ولکام نصب
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+‼️ توجه ‼️
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
+
+ تنظیمات    👉👈   settings!                
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🌐 @bombangteam 🌐
 ]]
 end
 return text
