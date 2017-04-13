@@ -79,8 +79,8 @@ function create_config( )
     enabled_plugins = {
     "bansettings_english",
 	"bansettings_farsi",
-    "gpsettings_english",
-	"gpsettings_farsi",
+    "gpsettings_en",
+	"gpsettings_fa",
     "msg-checks",
     "plugins",
     "tools",
