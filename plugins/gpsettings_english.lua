@@ -2891,114 +2891,235 @@ end
 if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
-➖لیست دستورات ربات➖
+[In reply to MAFIA_BOY]
+.:
+🔐 راهنما قفل های【اصلی】🔐
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل لینک 
+🔸باز کردن لینک
+🔹lock link
+🔸unlock link
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل تگ
+🔸باز کردن تگ
+🔹lock tag
+🔸unlock tag
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل ویرایش
+🔸باز کردن ویرایش
+🔹lock edit
+🔸unlock edit
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فحش
+🔸باز کردن فحش
+🔹 lock fosh
+🔸 unlock fosh
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فارسی
+🔸باز کردن فارسی
+🔹lock arabic
+🔸unlock arabic
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل وبسایت ها
+🔸باز کردن وبسایت ها
+🔹lock webpage
+🔸unlock webpage
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل ربات
+🔸باز کردن ربات 
+🔹lock bots
+🔸unlock bots
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل اسپم
+🔸باز کردن اسپم
+🔹lock spam
+🔸unlock spam
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فلود
+🔸باز کردن فلود
+🔹lock flood
+🔸unlock flood
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄ 
+🔹قفل  فونت
+🔸باز کردن فونت
+🔹lock markdown
+🔸unlock markdown
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل فراخوانی
+🔸باز کردن فراخوانی
+🔹lock mention 
+🔸unlock mention
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+〰〰〰〰〰〰〰〰〰〰〰
+🔐راهنما قفل های【فرعی】🔐
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل گیف
+🔸 باز کردن گیف
+🔹 !lock gif
+🔸 !unlock gif
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل عکس
+🔸 باز کردن عکس
+ 🔹 !lock photo
+🔸  !unlock photo
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فایل
+🔸 باز کردن فایل
+🔹 !lock document 
+🔸 !unlock document
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل استیکر
+🔸 باز کردن استیکر
+🔹  !lock sticker
+🔸 !unlock sticker
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فیلم 
+🔸 باز کردن فیلم
+🔹 !lock video
+🔸 !unlock video
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل متن
+🔸 باز کردن متن
+🔹 !lock text
+🔸 !unlock text
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل فروارد
+🔸 باز کردن فروارد
+🔹  !lock forward
+🔸  !unlock forward
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل ویس
+🔸 باز کردن ویس
+🔹  !lock voice
+🔸 !unlock voice
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل اطلاعات تماس
+🔸 باز کردن اطلاعات تماس
+🔹  !lock contact
+🔸 !unlock contact
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹 قفل همه 
+🔸 باز کردن همه 
+🔹 !lock all
+🔸 !unlock all
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔹قفل  اینلاین
+🔸 باز کردن اینلاین
+🔹 !lock inline
+🔸 !unlock inline
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+‼️ توجه ‼️
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
 
-🖱در حال حاضر زبان ربات انگلیسی است برای تغییر زبان دستور زیر را ارسال کنید🖱
-*!setlang fa*
-〰〰〰〰〰〰〰〰
-🔱*!promote* `[username|id|reply]` 
-⚜️_Promote User To Group Admin_
+قفل لینک (!lock link)
+باز کردن لینک (!unlock link)
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 〰〰〰〰〰〰〰〰〰〰〰
-🔱*!demote* `[username|id|reply]` 
-⚜️_Demote User From Group Admins List_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!setflood* `[1-50]`
-⚜️_Set Flooding Number_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!silent* `[username|id|reply]` 
-⚜️_Silent User From Group_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!unsilent* `[username|id|reply]` 
-⚜️_Unsilent User From Group_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!kick* `[username|id|reply]` 
-⚜️_Kick User From Group_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!ban* `[username|id|reply]` 
-⚜️_Ban User From Group_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!unban* `[username|id|reply]` 
-⚜️_UnBan User From Group_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!res* `[username]`
-⚜️_Show User ID_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!id* `[reply]`
-⚜️_Show User ID_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!whois* `[id]`
-⚜️_Show User's Username And Name_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!lock* `[link | tag | arabic | edit | fosh | webpage | bots | spam | flood | markdown | mention]`
-⚜️_If This Actions Lock, Bot Check Actions And Delete Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!unlock* `[link | tag | arabic | edit | fosh | webpage | bots | spam | flood | markdown | mention]`
-⚜️_If This Actions Unlock, Bot Not Delete Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!lock(new)* `[gifs | photo | tgservice | document | sticker | video | text | forward | location | audio | voice | contact | all]`
-⚜️_If This Actions Lock, Bot Check Actions And Delete Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!unlock(new)* `[gif | photo | tgservice | document | sticker | video | tgservice | text | forward | inline | location | audio | voice | contact | all]`
-⚜️_If This Actions Unlock, Bot Not Delete Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!set*`[rules | name | photo | link | about]`
-⚜️_Bot Set Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!clean* `[bans | mods | bots | rules | about | silentlist]`   
-⚜️_Bot Clean Them_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!pin* `[reply]`
-⚜️_Pin Your Message_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!unpin* 
-⚜️_Unpin Pinned Message_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!settings*
-⚜️_Show Group Settings_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!silentlist*
-⚜️_Show Silented Users List_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!banlist*
-⚜️_Show Banned Users List_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!ownerlist*
-⚜️_Show Group Owners List_ 
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!modlist* 
-⚜️_Show Group Moderators List_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!rules*
-⚜️_Show Group Rules_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!gpinfo*
-⚜️_Show Group Information_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!link*
-⚜️_Show Group Link_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!mt 0 1* (0h 1m)
-⚜️*!unmt*
-⚜️_lock All With Time_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!filter* 
-⚜️*!unfilter* 
-⚜️_filter word_
-⚜️*!filterlist* 
-⚜️_Show Filter List_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!del* 1-100
-⚜️*!delall* `[reply]`
-⚜️_Delete Message_
-〰〰〰〰〰〰〰〰〰〰〰
-🔱*!setwelcome* متن پیام
-⚜️*!welcome enable*
-⚜️*!welcome disable*
-⚜️_set welcome for group_
-〰〰〰〰〰〰〰〰〰〰〰
-⚜️ @bombangteam ⚜️
--------
-⚜️_You Can Use_ *[!/#]* _To Run The Commands_⚜️
+🔷🔘🔶 راهنمای مدیریتی 🔶🔘🔷
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setowner [username|id|reply] 
+🔷 مدیر 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !remowner [username|id|reply] 
+ 🔶 حذف مدیر  【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !promote [username|id|reply] 
+🔷 ادمین 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !demote [username|id|reply] 
+🔶 حذف ادمین 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setflood [1-50]
+🔷 تنظیم فلود 【50-1】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !silent [username|id|reply] 
+🔶 سایلنت 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unsilent [username|id|reply] 
+🔷 رفع سایلنت 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !kick [username|id|reply] 
+🔶 اخراج 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !ban [username|id|reply] 
+🔷 مسدود 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unban [username|id|reply] 
+🔶 رفع مسدود 【نام کاربری | آیدی | ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !res [username]
+🔷 رس 【نام کاربری】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !id [reply]
+🔶 ایدی 【ریپلای】 
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !whois [id]
+🔷 چه کسی 【ایدی】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !set[rules | name | photo | link | about ]
+🔶 تنظیم 【قوانین | اسم عکس | لینک | درباره گروه 】
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !clean [bans | mods | bots | rules | about | silentlist | filterlist | welcome]   
+🔷 پاک کردن 【 لیست مسدود| مدیران| ربات | قوانین | درباره | لیست سایلنت |  لیست فیلتر | ولکام 】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !filter [word]
+🔶 فیلتر‌【کلمه مورد نظر】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unfilter [word]
+🔷 رفع فیلتر 【کلمه مورد نظر】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !pin [reply]
+🔶 سنجاق 【ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !unpin [reply]
+🔷 حذف سنجاق【ریپلای】
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !welcome enable/disable
+🔶 ولکام  [فعال - غیر فعال]
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !settings
+🔷  تنظیمات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !silentlist
+🔷 لیست سایلنت
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !filterlist
+🔶 لیست فیلتر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !banlist
+🔷 لیست مسدود
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !ownerlist
+🔶 لیست مدیران
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !modlist 
+🔷 لیست ادمین ها
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !rules
+🔶 قوانین
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !about
+🔷  درباره گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !id
+🔶 ایدی
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !gpinfo
+🔷  اطلاعات گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !link
+🔶  لینک 
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !setwelcome [text]
+🔷 ولکام نصب
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+‼️ توجه ‼️
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
+
+ تنظیمات    👉👈   settings!                
+ ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🌐 @bombangteam 🌐
 ]]
 
 elseif lang then
