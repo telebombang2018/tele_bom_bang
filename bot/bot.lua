@@ -92,6 +92,7 @@ function create_config( )
 	"Write",
 	"Ping",
 	"monshi",
+	"bombanghelp",
 	"lock-fosh"
 	
  },
