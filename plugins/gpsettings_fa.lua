@@ -2857,19 +2857,19 @@ if not lang then
 text = [[
 bom bang help
 ------------------
-!mod help 
+mod help 
 راهنما مدیریت
 ------------------
-!lock help1
+lock help1
 راهنما قفل1
 ------------------
-!lock help2
+lock help2
 راهنما قفل2
 ------------------
-!sudo help 
+sudo help 
 راهنما سودو
 ------------------
-@bombangteam
+ch : @bombangteam
 ------------------
 ]]
 
@@ -2877,19 +2877,19 @@ elseif lang then
 text = [[
 bom bang help
 ------------------
-!mod help 
+mod help 
 راهنما مدیریت
 ------------------
-!lock help1
+lock help1
 راهنما قفل1
 ------------------
-!lock help2
+lock help2
 راهنما قفل2
 ------------------
-!sudo help 
+sudo help 
 راهنما سودو
 ------------------
-@bombangteam
+ch : @bombangteam
 ------------------
 ]]
 end
