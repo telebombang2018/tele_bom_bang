@@ -823,7 +823,6 @@ if matches[1] == "لیست مسدود" and is_mod(msg) then
   return banned_list(chat)
  end
 end
-end
 return {
 
 	patterns = {
