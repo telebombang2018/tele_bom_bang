@@ -1,29 +1,42 @@
-﻿do
- function run(msg, matches)
-return [[ 
-🔺نرخ گروه ضدتبلیغات بوم بنگ🔺
-➖➖➖➖➖➖➖➖➖
-💸نرخ گروه زیر یک کا عضو💸
-💵یک ماه : 7 تومان
-💴دو ماه : 11 تومان
-💶نامحدود : 15 تومان
-➖➖➖➖➖➖➖➖➖
-💸نرخ گروه بالای یک کا عضو💸
-💵یک ماه : 11 تومان
-💴دو ماه : 15 تومان
-💶نامحدود : 22 تومان
-برای خرید به پیوی زیر مراجعه کنید
-@MAFIA_BOY
-➖➖➖➖➖➖➖➖➖
-]]
-end
-return {
-patterns = {
-"^[!/#][Nn]erkh$",
-"^[Nn]erkh$",
-"^(نرخ)(.*)$",
-"^(قیمت)(.*)$",
-},
-run = run
+ local function run(msg, matches) 
+if matches [1] =='setnerkh' then 
+if not is_admin(msg) then 
+return 'شما سودو نیستید' 
+end 
+local nerkh = matches[2] 
+redis:set('bot:nerkh',nerkh) 
+return 'متن شما با موفقیت تنظیم شد.' 
+end 
+if matches[1] == 'nerkh' or 'نرخ' then 
+if not is_mod(msg) then 
+return 
+end 
+    local hash = ('bot:nerkh') 
+    local nerkh = redis:get(hash) 
+    if not nerkh then 
+    return ' ثبت نشده' 
+    else 
+     tdcli.sendMessage(msg.chat_id_, 0, 1, nerkh, 1, 'html') 
+    end 
+    end 
+if matches[1]=="delnerkh" then 
+if not is_admin(msg) then 
+return 'شما ادمین نیستید' 
+end 
+    local hash = ('bot:nerkh') 
+    redis:del(hash) 
+return ' پاک شد' 
+end 
+end 
+return { 
+patterns ={ 
+"^[!#/](setnerkh) (.*)$", 
+"^[!#/](nerkh)$",
+"^💳$",
+"^قیمت ربات$",
+"^قیمت رباط$",
+"^نرخ$", 
+"^[!#/](delnerkh)$", 
+}, 
+run = run 
 }
-end
